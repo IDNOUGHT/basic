@@ -1,14 +1,14 @@
 #include <iostream>
 #include <cstdlib>
 #include "Double_List.h"
-
+//åˆ›å»ºé“¾è¡¨
 DLNode * DL::create_DList()
 {
 	char ch;
 	DLNode* p,*n;  
 	HEAD=(DLNode*)malloc(sizeof(DLNode));
 	n=HEAD;
-	printf("ÇëÊäÈëÊý×Ö£¬ÒÔ'#'½áÊø£º");
+	printf("è¯·è¾“å…¥å­—ç¬¦ï¼Œä»¥'#'ç»“æŸï¼š");
 	ch=getchar();
 	if(ch!='#') n->data =ch;
 	ch=getchar();
@@ -27,7 +27,7 @@ DLNode * DL::create_DList()
 
 	return HEAD;
 }
-
+//è¾“å‡ºé“¾è¡¨çš„æ‰€æœ‰æ•°æ®
 void DL::show_DList ()
 {
 	DLNode* p;
@@ -44,7 +44,7 @@ void DL::show_DList ()
 		p=p->pre ;
 	}while(p!= HEAD);
 }
-
+//åˆ é™¤é“¾è¡¨
 bool DL::del_DList ()
 {
 	DLNode* p=HEAD;
