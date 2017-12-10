@@ -13,7 +13,6 @@ SLNode* SL::create_SList(int arr[], int N)
 	{
 		tmp=(SLNode*)malloc(sizeof(SLNode));
 		tmp->data = arr[i];
-		tmp->is_finished = 0;
 		n->next = tmp;
 		n = tmp;
 	}
