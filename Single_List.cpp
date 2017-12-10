@@ -1,14 +1,14 @@
 #include <iostream>
 #include "Single_List.h"
 
-//Îª¼ò»¯±¾Ìâ£¬¿ÉÒÔÖ±½ÓÍ¨¹ı±¾º¯Êı¶ÔÓÃ»§ÊäÈëµÄĞòÁĞ½øĞĞ¶ÁÈ¡
-//ÕâÑùĞ´¿ÉÒÔ½«Á´±í¶ÀÁ¢³öÀ´ÖØ¸´Ê¹ÓÃ
+//å¯ä»¥ç›´æ¥é€šè¿‡æœ¬å‡½æ•°å¯¹ç”¨æˆ·è¾“å…¥çš„åºåˆ—è¿›è¡Œè¯»å–
+//é€šè¿‡æ•°ç»„åˆ›å»ºé“¾è¡¨
 SLNode* SL::create_SList(int arr[], int N) 
 {
-	SLNode *tmp,*n;
+	SLNode *tmp,*n;  //tmpä¸ºä¸´æ—¶ç»“ç‚¹ï¼Œnç”¨äºåˆå§‹åŒ–å¤´ç»“ç‚¹
 	HEAD = (SLNode*)malloc(sizeof(SLNode));
 	n = HEAD;
-	n->data = -1; //Í·½áµã²»´æ´¢Êı¾İ
+	n->data = -1; //å¤´ç»“ç‚¹ä¸å­˜å‚¨æ•°æ®
 	for(int i=0;i<N;i++)
 	{
 		tmp=(SLNode*)malloc(sizeof(SLNode));
@@ -21,7 +21,7 @@ SLNode* SL::create_SList(int arr[], int N)
 
 	return HEAD;
 }
-
+//åˆ é™¤æ•´æ¡é“¾è¡¨
 bool SL::del_SList()
 {
 	SLNode*tmp;
