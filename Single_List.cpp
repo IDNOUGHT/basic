@@ -33,5 +33,5 @@ bool SL::del_SList()
 	} 
 	free(tmp);
 	free(HEAD);
-	return 1;
+	return true;
 }
