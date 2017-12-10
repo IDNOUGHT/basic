@@ -2,9 +2,9 @@
 #ifndef SINGLE_LIST
 #define SINGLE_LIST
 
+//瀹氫箟閾捐〃缁撶偣
 typedef struct node
 {
-	int is_finished;
 	int data;
 	struct node *next;
 }SLNode;
@@ -15,7 +15,7 @@ public:
 
 public:
 	SL() {};
-	SLNode* create_SList(int arr[], int N);  //创建单向链表函数
+	SLNode* create_SList(int arr[], int N); 
 	bool del_SList();
 };
 
