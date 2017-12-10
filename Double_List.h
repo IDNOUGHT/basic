@@ -4,7 +4,7 @@
 typedef struct node
 {
 	char data;
-	struct node *pre, *next;
+	struct node *pre, *next;  //ä¸Šä¸€ä¸ªç»“ç‚¹æŒ‡é’ˆï¼Œä¸‹ä¸€ä¸ªç»“ç‚¹æŒ‡é’ˆ
 }DLNode;
 
 class DL
@@ -14,9 +14,9 @@ public:
 
 public:
 	DL(){};
-	DLNode * create_DList();    //´´½¨Ë«ÏòÁ´±íº¯Êı
-	void show_DList();                  //¶ÁÈ¡Ë«ÏòÁ´±í
-    bool del_DList();                  //Çå¿ÕÁ´±í
+	DLNode * create_DList();    //åˆ›å»ºåŒå‘é“¾è¡¨å‡½æ•°
+	void show_DList();                  //è¯»å–åŒå‘é“¾è¡¨
+        bool del_DList();                  //æ¸…ç©ºé“¾è¡¨
 };
 
 #endif
